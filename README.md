@@ -1,1 +1,1 @@
-# intro.noggalito.com
+# Briefing for noggalito
