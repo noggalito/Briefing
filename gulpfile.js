@@ -37,14 +37,13 @@ gulp.task('sass:compile', function () {
 
   return gulp.src(paths.sass.entry)
     .pipe(sass({optionStyle: "compressed"}).on('error', sass.logError))
-    .pipe(concatCss('components.css'))
+    .pipe(concatCss('styles.css'))
     .pipe(autoprefixer({
       cascade: true
     }))
     .pipe(minify)
     .pipe(gulp.dest(paths.sass.dest));
 });
-
 
 gulp.task('minify:js', function(){
   return gulp.src(paths.js.entry)
