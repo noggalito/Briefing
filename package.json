@@ -1,0 +1,39 @@
+{
+  "name": "briefing",
+  "version": "0.0.1",
+  "description": "noggalito's briefing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noggalito/intro.noggalito.com.git"
+  },
+  "keywords": [
+    "briefing",
+    "forms",
+    "noggalito"
+  ],
+  "author": "Miguel Viñan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noggalito/intro.noggalito.com/issues"
+  },
+  "homepage": "https://github.com/noggalito/intro.noggalito.com#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "vinyl-map": "^1.0.1"
+  }
+}
