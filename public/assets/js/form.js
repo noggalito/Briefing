@@ -1,8 +1,9 @@
 (function() {
   'use strict'
   var formWrap = document.getElementById( 'fs-form-wrap' );
+  var formArray = [];
 
-  [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+  formArray.slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
     new SelectFx( el, {
       stickyPlaceholder: false,
       onChange: function(val){
