@@ -20,7 +20,7 @@ var paths = {
   watch: {
     css: './lib/assets/css/*.css',
     sass: './lib/assets/css/sass/**/*.sass',
-    js: './lib/js/*.js'
+    js: './lib/assets/js/*.js'
   }
 }
 
