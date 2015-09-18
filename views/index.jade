@@ -1,4 +1,24 @@
 extends layout
 
 block content
-  h1 Sessión informativa de noggalito
+  div.container
+    div(id="fs-form-wrap" class="fs-form-wrap")
+      div(class="fs-title")
+        h1 Session de información
+      form(id="myform", class="fs-form fs-form-full", autocomplete="off")
+        ol.fs-fields
+          li
+            label(class="fs-field-label fs-anim-upper", for="q1") Cual es tu proyecto ?
+            input(class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required)
+          li(data-input-trigger)
+            label(class="fs-field-label fs-anim-upper" for="q3" data-info="Esta es una ayuda que tu conoces sobres el servicio que nececitas") Cual es la prioridad que nececitas para tu nuevo servicio web?
+            div(class="fs-radio-group fs-radio-custom clearfix fs-anim-lower")
+              span
+                input(id="q3b" name="q3" type="radio" value="conversion")
+                label(for="q3b" class="radio-conversion") Vender Cosas
+              span
+                input(id="q3c" name="q3" type="radio" value="conversion")
+                label(for="q3c" class="radio-conversion") Volverse Famoso
+              span
+                input(id="q3a" name="q3" type="radio" value="conversion")
+                label(for="q3a" class="radio-conversion") Tienda Movil
