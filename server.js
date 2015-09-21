@@ -34,5 +34,4 @@
     console.log('Escuchando en el puerto %s', port);
   });
 
-  module.exports = app;
 })();

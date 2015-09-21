@@ -18,8 +18,9 @@ var paths = {
     dest: './public/assets/js/min/'
   },
   watch: {
+    css: './lib/assets/css/*.css',
     sass: './lib/assets/css/sass/**/*.sass',
-    js: './lib/js/*.js'
+    js: './lib/assets/js/*.js'
   }
 }
 
@@ -54,12 +55,14 @@ gulp.task('minify:js', function(){
 
 gulp.task('run:developing', function () {
   gulp.watch(paths.watch.sass, ['sass:compile']);
+  gulp.watch(paths.watch.css, ['sass:compile']);
   gulp.watch(paths.watch.js, ['minify:js']);
 
   gutil.log(
     ' \n\n ',
-    gutil.colors.yellow('\n Listen sass files in '+ paths.watch.sass),
-    gutil.colors.yellow('\n Listen js files in '+ paths.watch.js),
+    gutil.colors.yellow('\n Listen all sass files in '+ paths.watch.sass),
+    gutil.colors.yellow('\n Listen all css files in '+ paths.watch.css),
+    gutil.colors.yellow('\n Listen all js files in '+ paths.watch.js),
     gutil.colors.green('\n all is ready, have fun !'),
     ' \n\n '
   );
